@@ -8,3 +8,11 @@ function updateCounters() {
 }
 
 updateCounters();
+
+function toggleDone() {
+  var checkbox = this;
+
+  $(checkbox).parent().toggleClass("completed");
+
+  updateCounters();
+}
