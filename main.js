@@ -15,6 +15,7 @@ function toggleDone() {
   updateCounters();
 }
 
-$("input[type=checkbox]").bind('change', toggleDone());
-
-updateCounters();
+$(document).ready(function () {
+  $("input[type=checkbox]").bind('change', toggleDone);
+  updateCounters();
+});
